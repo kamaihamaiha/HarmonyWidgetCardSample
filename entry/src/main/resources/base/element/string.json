@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "小卡片"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "这是一个卡片的例子"
+    },
+    {
+      "name": "service_widget_title",
+      "value": "Title"
+    },
+    {
+      "name": "service_widget_introduction",
+      "value": "Introduction"
+    }
+  ]
+}
