@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    shape="rectangle">
+
+<!--    圆角半径 30px-->
+    <corners
+        ohos:radius="15px"/>
+
+
+    <solid
+        ohos:color="#23aa32"/>
+</shape>

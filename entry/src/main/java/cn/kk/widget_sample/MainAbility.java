@@ -3,6 +3,7 @@ package cn.kk.widget_sample;
 import cn.kk.widget_sample.io.MyDataHelper;
 import cn.kk.widget_sample.slice.MainAbilitySlice;
 import cn.kk.widget_sample.utils.ImageUtil;
+import cn.kk.widget_sample.utils.TimeUtil;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.ability.ProviderFormInfo;
@@ -55,8 +56,6 @@ public class MainAbility extends Ability {
                     // 文字描述
                     provider.setText(ResourceTable.Id_tv_card_detail,"快来一起学鸿蒙吧!");
                     // 更新图片
-                    PixelMap pixelMap = ImageUtil.getPixelMap(ResourceTable.Media_bg_android, getContext());
-                    provider.setImagePixelMap(ResourceTable.Id_iv_card,pixelMap);
 
                     // 点击控制事件
 
@@ -78,6 +77,9 @@ public class MainAbility extends Ability {
         // todo 被动更新卡片(单位 30 分钟，默认是 1*30 分钟的频率，如果要设置，那么在 config.json 中（forms -> updateDuration）设置，只能是自然数)
         // [Java 卡片开发指导](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ability-service-widget-provider-java-0000001104082220)
 
+        ComponentProvider componentProvider = new ComponentProvider(ResourceTable.Layout_form_image_with_info_service_widget_2_2, getContext());
+        componentProvider.setImagePixelMap(ResourceTable.Id_iv_card, ImageUtil.getPixelMap(ResourceTable.Media_bg_android,getContext()));
+        componentProvider.setText(ResourceTable.Id_tv_card_detail, "被动更新了，" + TimeUtil.getTime());
 
     }
 
@@ -86,5 +88,8 @@ public class MainAbility extends Ability {
         super.onDeleteForm(formId);
 
         // todo 删除卡片
+        if (MyDataHelper.getCardId(getContext()) == formId) {
+            MyDataHelper.deleteCardId(getContext());
+        }
     }
 }

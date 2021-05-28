@@ -26,4 +26,10 @@ public class MyDataHelper {
     public static long getCardId(Context context){
        return PreferencesHelper.getInstance(context).getLongValue(SPKey.WIDGET_FORM_ID);
     }
+
+    public static void deleteCardId(Context context){
+       PreferencesHelper.getInstance(context).deleteValue(SPKey.WIDGET_FORM_ID);
+    }
+
+
 }
