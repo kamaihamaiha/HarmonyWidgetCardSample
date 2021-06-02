@@ -14,25 +14,17 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "cn.kk.widget_sample",
-    "name": ".MyApplication",
-    "deviceType": [
-      "phone"
-    ],
-    "distro": {
-      "deliveryWithInstall": true,
-      "moduleName": "entry",
-      "moduleType": "entry"
-    },
     "abilities": [
       {
         "skills": [
           {
             "entities": [
-              "entity.system.home"
+              "entity.system.home",
+              "cn.kk.widget_sample.TestAbility"
             ],
             "actions": [
-              "action.system.home"
+              "action.system.home",
+              "cn.kk.widget_sample.TestAbility"
             ]
           }
         ],
@@ -63,10 +55,37 @@
               "$layout:form_image_with_info_service_widget_2_2"
             ],
             "updateEnabled": true,
-            "updateDuration": 1
+            "updateDuration": 1,
+            "metaData": {
+              "customizeData": [
+                {
+                  "name": "originWidgetName",
+                  "value": "com.huawei.weather.testWidget"
+                }
+              ]
+            }
           }
         ]
+      },
+      {
+        "orientation": "unspecified",
+        "name": "cn.kk.widget_sample.TestAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:app_name",
+        "type": "page",
+        "launchType": "standard"
       }
-    ]
+    ],
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "name": ".MyApplication",
+    "package": "cn.kk.widget_sample"
   }
 }
