@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#FFFFFF"
+    ohos:orientation="vertical"
+    ohos:remote="true">
+
+    <DirectionalLayout
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:background_element="#FFFFFF"
+        ohos:orientation="horizontal"
+        ohos:padding="5vp">
+
+        <Image
+            ohos:height="20vp"
+            ohos:width="20vp"
+            ohos:image_src="$media:icon_default_image"
+            ohos:scale_mode="zoom_center"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:left_margin="5vp"
+            ohos:text="字段一"
+            ohos:text_color="#E5000000"
+            ohos:truncation_mode="ellipsis_at_end"
+            ohos:weight="1"/>
+
+        <Image
+            ohos:height="20vp"
+            ohos:width="20vp"
+            ohos:image_src="$media:like_icon"
+            ohos:scale_mode="zoom_center"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:background_element="#CFCFCF"
+        ohos:orientation="vertical"
+        ohos:padding="5vp">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="字段一"
+            ohos:text_color="#E5000000"
+            ohos:truncation_mode="ellipsis_at_end"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="60vp"
+            ohos:align_parent_right="true"
+            ohos:alignment="center"
+            ohos:left_margin="5vp"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="字段二"
+                ohos:text_color="#E5000000"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:weight="1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="字段三"
+                ohos:text_color="#99000000"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:weight="1"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:background_element="#CFCFCF"
+        ohos:orientation="vertical"
+        ohos:padding="5vp"
+        ohos:top_margin="3vp">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="字段一"
+            ohos:text_color="#E5000000"
+            ohos:truncation_mode="ellipsis_at_end"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="60vp"
+            ohos:align_parent_right="true"
+            ohos:alignment="center"
+            ohos:left_margin="5vp"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="字段二"
+                ohos:text_color="#E5000000"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:weight="1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text="字段三"
+                ohos:text_color="#99000000"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:weight="1"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

@@ -6,16 +6,15 @@
     ohos:orientation="vertical">
 
     <Button
-        ohos:top_margin="100vp"
         ohos:id="$+id:btnUpdate"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:text_color="#ffffff"
-        ohos:padding="20vp"
         ohos:background_element="$graphic:bg_round_corner_green"
         ohos:layout_alignment="horizontal_center"
+        ohos:padding="20vp"
         ohos:text="点击主动更新卡片信息"
+        ohos:text_color="#ffffff"
         ohos:text_size="50px"
-        />
+        ohos:top_margin="100vp"/>
 
 </DirectionalLayout>

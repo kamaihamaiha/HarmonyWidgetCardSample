@@ -19,6 +19,30 @@
     {
       "name": "service_widget_introduction",
       "value": "Introduction"
+    },
+    {
+      "name": "qury_form_layout_1_2_a_title",
+      "value": "Title"
+    },
+    {
+      "name": "qury_form_layout_1_2_a_introduction",
+      "value": "Introduction"
+    },
+    {
+      "name": "qury_form_layout_1_2_b_title",
+      "value": "Title"
+    },
+    {
+      "name": "qury_form_layout_1_2_b_introduction",
+      "value": "Introduction"
+    },
+    {
+      "name": "qury_form_layout_2_2_a_title",
+      "value": "Title"
+    },
+    {
+      "name": "qury_form_layout_2_2_a_introduction",
+      "value": "Introduction"
     }
   ]
 }

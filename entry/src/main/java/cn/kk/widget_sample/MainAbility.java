@@ -25,9 +25,13 @@ import java.util.*;
  */
 public class MainAbility extends Ability {
 
+    private static final int DIMENSION_1X2 = 1;
     private static final int DEFAULT_DIMENSION_2X2 = 2;
+    private static final int DEFAULT_DIMENSION_4X4 = 4;
+
     // 这个是在创建卡片时，对话框中输入的，在创建之后 config.json 里面 forms -> name
     private static final String CARD_NAME = "service_widget";
+
     // 是否有数据
     private final boolean hasData = true;
 
@@ -55,20 +59,21 @@ public class MainAbility extends Ability {
 //        int R = intent.getIntParam(AbilitySlice.PARAM_FORM_DIMENSION_KEY, -1);
 //        int R = intent.getIntParam(AbilitySlice.PARAM_FORM_HEIGHT_KEY, -1);
 //        int R = intent.getIntParam(AbilitySlice.PARAM_FORM_IDENTITY_KEY, -1);
+        LogUtil.info("HM", "onCreateForm.dimension=>" + dimension);
 
         if (formName.equals(CARD_NAME)) {
             // 2 x 2 卡片
             if (dimension == DEFAULT_DIMENSION_2X2) {
 
                 // 保存卡片 id
-                MyDataHelper.saveCardId(formId, getContext());
+//                MyDataHelper.saveCardId(formId, getContext());
 
                 // Layout_form_image_with_info_service_widget_2_2 是服务卡片的布局
                 ProviderFormInfo providerFormInfo = new ProviderFormInfo(ResourceTable.Layout_form_image_with_info_service_widget_2_2, this);
 
                 // 如果创建的时候，就有数据要放到卡片上，那么调用如下代码
                 if (hasData) {
-                    ComponentProvider provider = new ComponentProvider(ResourceTable.Layout_form_image_with_info_service_widget_2_2, getContext());
+                    ComponentProvider provider = new ComponentProvider(ResourceTable.Layout_form_image_with_info_service_widget_2_2, this);
                     // 文字描述
                     provider.setText(ResourceTable.Id_tv_card_detail, "快来一起学鸿蒙吧!");
                     // 官网文档，照抄点击控制事件
@@ -79,6 +84,63 @@ public class MainAbility extends Ability {
                 return providerFormInfo;
             }
         }
+
+        // 1*2
+        if (formName.equals("qury_form_layout_1_2_a")) {
+            if (dimension == DIMENSION_1X2) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_1_2_a, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_1_2_b")) {
+            if (dimension == DEFAULT_DIMENSION_2X2) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_1_2_b, this);
+            }
+        }
+
+        // 2*2
+        if (formName.equals("qury_form_layout_2_2_a")) {
+            if (dimension == DEFAULT_DIMENSION_2X2) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_2_a, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_2_2_b")) {
+            if (dimension == DEFAULT_DIMENSION_2X2) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_2_b, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_2_2_c")) {
+            if (dimension == DEFAULT_DIMENSION_2X2) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_2_c, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_2_2_d")) {
+            if (dimension == DEFAULT_DIMENSION_2X2) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_2_d, this);
+            }
+        }
+
+        // 2*4
+        if (formName.equals("qury_form_layout_2_4_a")) {
+            if (dimension == DEFAULT_DIMENSION_4X4) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_4_a, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_2_4_b")) {
+            if (dimension == DEFAULT_DIMENSION_4X4) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_4_b, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_2_4_c")) {
+            if (dimension == DEFAULT_DIMENSION_4X4) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_4_c, this);
+            }
+        }
+        if (formName.equals("qury_form_layout_2_4_d")) {
+            if (dimension == DEFAULT_DIMENSION_4X4) {
+                return new ProviderFormInfo(ResourceTable.Layout_qury_form_layout_2_4_d, this);
+            }
+        }
+
         return null;
     }
 
@@ -124,7 +186,7 @@ public class MainAbility extends Ability {
     protected void onDeleteForm(long formId) {
         super.onDeleteForm(formId);
 
-        // todo 删除卡片
+        //  删除卡片
         if (MyDataHelper.getCardId(getContext()) == formId) {
             MyDataHelper.deleteCardId(getContext());
         }

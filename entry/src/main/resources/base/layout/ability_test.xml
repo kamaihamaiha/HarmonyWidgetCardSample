@@ -14,7 +14,6 @@
         ohos:text="TEST"
         ohos:text_color="#ffffff"
         ohos:text_size="50px"
-        ohos:top_margin="100vp"
-        />
+        ohos:top_margin="100vp"/>
 
 </DirectionalLayout>

@@ -11,25 +11,25 @@ public class MyDataHelper {
 
     /**
      * 保存卡片 id
+     *
      * @param id
      * @param context
      */
-    public static void saveCardId(long id, Context context){
-        PreferencesHelper.getInstance(context).saveLongValue(SPKey.WIDGET_FORM_ID,id);
+    public static void saveCardId(long id, Context context) {
+        PreferencesHelper.getInstance(context).saveLongValue(SPKey.WIDGET_FORM_ID, id);
     }
 
     /**
      * 获取卡片 id
+     *
      * @param context
      * @return
      */
-    public static long getCardId(Context context){
-       return PreferencesHelper.getInstance(context).getLongValue(SPKey.WIDGET_FORM_ID);
+    public static long getCardId(Context context) {
+        return PreferencesHelper.getInstance(context).getLongValue(SPKey.WIDGET_FORM_ID);
     }
 
-    public static void deleteCardId(Context context){
-       PreferencesHelper.getInstance(context).deleteValue(SPKey.WIDGET_FORM_ID);
+    public static void deleteCardId(Context context) {
+        PreferencesHelper.getInstance(context).deleteValue(SPKey.WIDGET_FORM_ID);
     }
-
-
 }

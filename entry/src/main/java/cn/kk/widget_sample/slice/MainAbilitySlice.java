@@ -16,7 +16,6 @@ public class MainAbilitySlice extends AbilitySlice {
         super.setUIContent(ResourceTable.Layout_ability_main);
 
         findComponentById(ResourceTable.Id_btnUpdate).setClickedListener(component -> {
-
             ComponentProvider componentProvider = new ComponentProvider(ResourceTable.Layout_form_image_with_info_service_widget_2_2, getContext());
             componentProvider.setText(ResourceTable.Id_tv_card_detail, "主动更新了");
             componentProvider.setImagePixelMap(ResourceTable.Id_iv_card, ImageUtil.getPixelMap(ResourceTable.Media_bg_android, getContext()));

@@ -29,15 +29,14 @@ public class ImageUtil {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            try{
-                if (drawableInputStream != null){
+            try {
+                if (drawableInputStream != null) {
                     drawableInputStream.close();
                 }
-            }catch (Exception e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         return null;
     }
-
 }

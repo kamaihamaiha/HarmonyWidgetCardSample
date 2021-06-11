@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DependentLayout
+<DirectionalLayout
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
+    ohos:padding="10vp"
     ohos:background_element="#FFFFFFFF"
+    ohos:orientation="horizontal"
     ohos:remote="true">
 
     <Image
-        ohos:id="$+id:iv_card"
-        ohos:height="80vp"
-        ohos:width="match_parent"
-        ohos:foreground_element="$graphic:bg_round_corner"
-        ohos:image_src="$media:bg_harmony"
-        ohos:left_margin="10vp"
-        ohos:padding="15px"
-        ohos:right_margin="10vp"
-        ohos:scale_mode="stretch"
-        ohos:top_margin="10vp"/>
+        ohos:height="match_parent"
+        ohos:width="50vp"
+        ohos:image_src="$media:icon_default_image"
+        ohos:scale_mode="clip_center"/>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="126vp"
         ohos:align_parent_bottom="true"
-        ohos:bottom_margin="12vp"
+        ohos:left_margin="10vp"
         ohos:horizontal_center="true"
         ohos:orientation="vertical">
 
-        <!--        卡片描述-->
         <Text
-            ohos:id="$+id:tv_card_detail"
             ohos:height="match_content"
             ohos:width="match_parent"
-            ohos:background_element="#FF00FF"
+            ohos:text="字段一"
+            ohos:text_color="#E5000000"
+            ohos:text_size="16fp"
+            ohos:text_weight="500"
+            ohos:truncation_mode="ellipsis_at_end"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="字段二"
             ohos:text_color="#99000000"
             ohos:text_size="12fp"
             ohos:text_weight="400"
             ohos:top_margin="2vp"
             ohos:truncation_mode="ellipsis_at_end"/>
     </DirectionalLayout>
-</DependentLayout>
+</DirectionalLayout>

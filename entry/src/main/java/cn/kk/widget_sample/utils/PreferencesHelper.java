@@ -9,6 +9,7 @@ import ohos.data.preferences.Preferences;
  * [使用](https://developer.huawei.com/consumer/cn/codelabsPortal/carddetails/HarmonyOS-Preferenced-Database)
  */
 public class PreferencesHelper {
+
     static final String FILE_NAME = "config";
     private final Preferences preferences;
     private static PreferencesHelper instance;

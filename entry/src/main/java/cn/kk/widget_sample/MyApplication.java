@@ -17,6 +17,4 @@ public class MyApplication extends AbilityPackage {
     public static MyApplication getInstance() {
         return instance;
     }
-
-
 }

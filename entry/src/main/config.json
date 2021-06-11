@@ -41,7 +41,7 @@
             "landscapeLayouts": [
               "$layout:form_image_with_info_service_widget_2_2"
             ],
-            "isDefault": true,
+            "isDefault": false,
             "scheduledUpdateTime": "10:30",
             "defaultDimension": "2*2",
             "name": "service_widget",
@@ -64,6 +64,206 @@
                 }
               ]
             }
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_1_2_a"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "1*2",
+            "name": "qury_form_layout_1_2_a",
+            "description": "qury_form_layout_1_2_a",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "1*2"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_1_2_a"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_1_2_b"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "1*2",
+            "name": "qury_form_layout_1_2_b",
+            "description": "qury_form_layout_1_2_b",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "1*2"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_1_2_b"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_2_a"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "qury_form_layout_2_2_a",
+            "description": "qury_form_layout_2_2_a",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_2_a"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_2_b"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "qury_form_layout_2_2_b",
+            "description": "qury_form_layout_2_2_b",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_2_b"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_2_c"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "qury_form_layout_2_2_c",
+            "description": "qury_form_layout_2_2_c",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_2_c"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_2_d"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*2",
+            "name": "qury_form_layout_2_2_d",
+            "description": "qury_form_layout_2_2_d",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*2"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_2_d"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_4_a"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*4",
+            "name": "qury_form_layout_2_4_a",
+            "description": "qury_form_layout_2_4_a",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*4"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_4_a"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_4_b"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*4",
+            "name": "qury_form_layout_2_4_b",
+            "description": "qury_form_layout_2_4_b",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*4"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_4_b"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_4_c"
+            ],
+            "isDefault": false,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*4",
+            "name": "qury_form_layout_2_4_c",
+            "description": "qury_form_layout_2_4_c",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*4"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_4_c"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
+          },
+          {
+            "landscapeLayouts": [
+              "$layout:qury_form_layout_2_4_d"
+            ],
+            "isDefault": true,
+            "scheduledUpdateTime": "10:30",
+            "defaultDimension": "2*4",
+            "name": "qury_form_layout_2_4_d",
+            "description": "qury_form_layout_2_4_d",
+            "colorMode": "auto",
+            "type": "Java",
+            "supportDimensions": [
+              "2*4"
+            ],
+            "portraitLayouts": [
+              "$layout:qury_form_layout_2_4_d"
+            ],
+            "updateEnabled": true,
+            "updateDuration": 1
           }
         ]
       },
